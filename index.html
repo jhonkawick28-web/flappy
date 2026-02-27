@@ -183,6 +183,16 @@
             ctx.fillText("Score: " + score, 20, 40);
 
             requestAnimationFrame(update);
+
+
+            // ===== BACKGROUND TEXT =====
+            ctx.save();
+            ctx.globalAlpha = 0.55; // transparency (0.1 to 0.3 looks best)
+            ctx.fillStyle = "black";
+            ctx.textAlign = "center";
+            ctx.font = "bold 80px Arial";
+            ctx.fillText("Balu ❤️ Bhanu", canvas.width / 2, canvas.height / 2);
+            ctx.restore();
         }
 
         // ===== JUMP =====
